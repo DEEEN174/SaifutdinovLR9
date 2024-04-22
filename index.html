@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="./img/logo.png" alt="pic_logo" class="logo">
+            <div class="wrapper">
+                <div class="offer">
+                    <h1 class="title">
+                        С помощью нас <br> вы сможете создать то, о чём
+                    </h1>
+                    <span class="title__span">
+                        желаете!
+                    </span>
+                    <p class="offer__text">
+                        Наши возможности + опыт позволят Вам достичь
+                        огромного успеха. Мы верим в вас! И знаем это на все 100%
+                        Вас не остановить!
+                    </p>
+                    <a class="btn">Узнать больше...</a>
+                </div>
+                <img src="./img/header-img.png" alt="pic_phone" class="header__img">
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h2 class="main__title">Что Вам необходимо?</h2>
+            <div class="main__blocks">
+                <div class="block">
+                    <img src="./img/f3.png" alt="pic_f3">
+                    <h3>Первый блок</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="block">
+                    <img src="./img/f4.png" alt="pic_f4">
+                    <h3>Второй блок</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
+                </div>
+                <div class="block">
+                    <img src="./img/f5.png" alt="pic_f5">
+                    <h3>Третий блок</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="firstForm">
+        <div class="container">
+            <form action="#" method="POST" enctype="multipart/form-data" id="productForm">
+                <h2 class="form_title">Форма для дополнительной информации</h2>
+                <div class="form_blocks">
+                    <span id="firstNameError"></span>
+                    <input type="text" placeholder="Имя" id="firstName" onchange = "checkInput('firstName', 'firstNameError', /^[a-zA-Zа-яА-ЯёЁ\s]{2,15}$/, 'Введите корректное имя');">
+                    <span id="lastNameError"></span>
+                    <input type="text" placeholder="Фамилия" id="lastName" onchange = "checkInput('lastName', 'lastNameError', /^[a-zA-Zа-яА-ЯёЁ\s]{2,20}$/, 'Введите корректную фамилию');">
+                    <span id="emailError"></span>
+                    <input type="email" placeholder="E-mail" id="email" onchange="checkInput('email', 'emailError', /\S+@\S+\.\S+/, 'Введите корректный e-mail');;">
+                    <input type="text" placeholder="Что вас интересует" id="product" onchange="checkInput('product', 'productError', /[a-zA-Zа-яА-ЯёЁ\s]{2,15}$/, 'Введите корректное название товара');">
+                    
+                   
+                    
+                    <input type="submit" value="Отправить запрос!" class="sub_btn">
+                </div>
+            </form>
+            <div class="successful" id="successMessage">
+                Ваша заявка успешно создана!<br>В ближайшее время с Вами свяжется наш менеджер для уточнения деталей. 
+            </div> 
+        </div>
+    </section>
+    <section class="secondForm">
+        <div class="container">
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <h2 class="form_title">Форма заказа обратного звонка</h2>
+                <div class="form_blocks">
+                    <input type="text" placeholder="Имя" required pattern="[A-Za-zА-Яа-яЁё]{2,15}" title="Введите корректное имя">
+                    <input type="email" placeholder="E-mail" required>
+                    <input type="tel" placeholder="Телефон" required pattern="\+\d{11}" title="Введите телефон">
+                    <input type="text" placeholder="Какая тема вас интересует?" required pattern="[A-Za-z0-9\s]+" title="Введите тему">
+                    <input type="submit" value="Отправить вопрос!" class="sub_btn">
+                </div>
+            </form>
+        </div>
+    </section>
+    
+
+    <section class="lastblock">
+        <div class="container">
+            <p class="text__lastblock">© Все на этом сайте защищено</p>
+        </div>
+    </section>
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

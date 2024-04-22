@@ -1,0 +1,229 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+header{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(32, 23, 213) 0%, rgb(99, 99, 238) 0%, rgba(0,212,255,1) 100%);
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.logo{
+    margin-bottom: 20px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white
+}
+.offer{
+    width: 500px;
+}
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.title__span{
+    font-size: 48px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.offer__text{
+    font-size: 16px;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.btn{
+    width: 220px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(255, 191, 0);
+    transition: all 0.5;
+}
+
+.btn:hover{
+    background-color: rgb(255, 207, 63);
+    box-shadow: 10px 10px 10px grey;
+}
+
+.header__img{
+    width: 450px;
+}
+#firstNameError,
+#lastNameError,
+#emailError,
+#phoneError,
+#productError,
+#quantityError{
+    display: none;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+.successful{
+    margin-top: 240px;
+    margin-bottom: 240px;
+    display: none;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
+
+.main__title{
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.main__blocks{
+    display: flex;
+    justify-content: space-between;
+}
+.block{
+    text-align: center;
+    width: 30%;
+}
+
+.block img{
+    margin-bottom: 30px;
+}
+
+.secondForm{
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-color: rgb(215, 215, 215);
+}
+.firstForm{
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(32, 23, 213) 0%, rgb(99, 99, 238) 0%, rgba(0,212,255,1) 100%);
+}
+.form_title{
+    font-size: 26px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.form_blocks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_blocks input[type='text'],
+.form_blocks input[type='email'],
+.form_blocks input[type='tel'],
+.form_blocks input[type='number'] {
+    padding-left: 30px;
+    margin-bottom: 20px;
+    line-height: 30px;
+    width: 300px;
+}
+
+.sub_btn{
+    width: 335px;
+    line-height: 40px;
+    background-color:  rgb(255, 191, 0);;
+    border: none;
+    font-weight: bold;
+}
+
+.lastblock{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(51,51,132,1) 0%, rgba(0,212,255,1) 100%);
+    color: white;
+}
+
+.text__lastblock{
+    font-size: 14px;
+    margin:0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media screen and (max-width: 1200px) 
+{
+    .container{
+        width: 80%;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .offer{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .header__img{
+        width: 65%;
+        margin-top: 40px;
+    }
+    .main__blocks{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .block{
+        margin-top: 40px;
+        width: 50%;
+    }
+    .offer__text{
+        width: 100%;
+    }
+
+}
+/* Large devices (desktops, 992px and up)*/
+@media screen and (max-width: 992px) 
+{
+    .container{
+        width: 80%;
+    }
+    .form_blocks{
+        width: 100%;
+    }
+    .header__img{
+        width: 60%;
+        margin-top: 40px;
+    }
+}
+/* Medium devices (tablets, 768px and up)*/
+@media screen and (max-width: 768px) 
+{
+    .container{
+        width: 90%;
+    }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media screen and (max-width: 576px) 
+{
+    .header__img{
+        width: 80%;
+        margin-top: 40px;
+    }
+    
+}
